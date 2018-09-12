@@ -20,6 +20,7 @@
 		151305DF2148413F00738727 /* CustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305DC2148413E00738727 /* CustomError.swift */; };
 		151305E22148415E00738727 /* GamesRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305E02148415E00738727 /* GamesRemoteDataSource.swift */; };
 		151305E32148415E00738727 /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305E12148415E00738727 /* GamesViewModel.swift */; };
+		151305E52149899000738727 /* ImageCacheLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305E42149899000738727 /* ImageCacheLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		151305DC2148413E00738727 /* CustomError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomError.swift; sourceTree = "<group>"; };
 		151305E02148415E00738727 /* GamesRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesRemoteDataSource.swift; sourceTree = "<group>"; };
 		151305E12148415E00738727 /* GamesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
+		151305E42149899000738727 /* ImageCacheLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 		151305D82148413E00738727 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				151305E42149899000738727 /* ImageCacheLoader.swift */,
 				151305D92148413E00738727 /* Extension */,
 				151305DA2148413E00738727 /* NetworkManager.swift */,
 				151305DC2148413E00738727 /* CustomError.swift */,
@@ -301,6 +304,7 @@
 				151305DF2148413F00738727 /* CustomError.swift in Sources */,
 				151305A621483F4100738727 /* GamesViewController.swift in Sources */,
 				151305E32148415E00738727 /* GamesViewModel.swift in Sources */,
+				151305E52149899000738727 /* ImageCacheLoader.swift in Sources */,
 				151305E22148415E00738727 /* GamesRemoteDataSource.swift in Sources */,
 				151305A421483F4100738727 /* AppDelegate.swift in Sources */,
 				151305DD2148413F00738727 /* NetworkManager.swift in Sources */,

@@ -5,7 +5,6 @@ class GamesRemoteDataSource {
     let baseURLString: String = "https://api.unibet.com/"
     typealias Completion = ([Game]?, CustomError?) -> Void
     
-    
     /// request list of games as Game model array
     ///
     /// - Parameter completion: completion handler

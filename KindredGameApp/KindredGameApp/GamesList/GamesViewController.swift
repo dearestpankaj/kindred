@@ -3,7 +3,7 @@ import UIKit
 class GamesViewController: UIViewController {
     @IBOutlet weak var tblvwGames: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
-    
+    let imgLoader = ImageCacheLoader()
     var viewmodel = GamesViewModel()
     var arrGames = [Game](){
         didSet{
@@ -19,7 +19,6 @@ class GamesViewController: UIViewController {
         super.viewDidLoad()
         getGames()
     }
-    
     
     /// download games and populate tableview
     private func getGames(){
@@ -58,9 +57,11 @@ extension GamesViewController:UITableViewDataSource, UITableViewDelegate{
         if let cell = tableView.dequeueReusableCell(withIdentifier: "gamesReuseIdentifier") as? GameTableViewCell{
             let model = arrGames[indexPath.row]
             cell.setup(model)
+            imgLoader.getImageWithPath(imagePath:model.imageUrl) { (image) in
+                cell.imgvwGame.image = image
+            }
             return cell
         }
         return UITableViewCell()
     }
-    
 }
