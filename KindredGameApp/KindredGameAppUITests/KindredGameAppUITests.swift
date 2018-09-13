@@ -1,11 +1,3 @@
-//
-//  KindredGameAppUITests.swift
-//  KindredGameAppUITests
-//
-//  Created by Pankaj Sachdeva on 11/09/18.
-//  Copyright © 2018 Pankaj Sachdeva. All rights reserved.
-//
-
 import XCTest
 
 class KindredGameAppUITests: XCTestCase {

@@ -9,7 +9,7 @@ class NetworkManager {
     /// - Parameters:
     ///   - requestURL: request url
     ///   - completion: completion handler
-    class func getRequest(requestURL:String, completion:@escaping Completion){
+    func getRequest(requestURL:String, completion:@escaping Completion){
         if let url = URL(string: requestURL){
             let session = URLSession.shared.dataTask(with: url) { (data, response, error) in
                 if error == nil {
