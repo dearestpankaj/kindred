@@ -12,7 +12,6 @@
 		151305A921483F4100738727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151305A721483F4100738727 /* Main.storyboard */; };
 		151305AB21483F4200738727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151305AA21483F4200738727 /* Assets.xcassets */; };
 		151305AE21483F4200738727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151305AC21483F4200738727 /* LaunchScreen.storyboard */; };
-		151305B921483F4200738727 /* KindredGameAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305B821483F4200738727 /* KindredGameAppTests.swift */; };
 		151305C421483F4200738727 /* KindredGameAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305C321483F4200738727 /* KindredGameAppUITests.swift */; };
 		151305D32148407200738727 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305D22148407200738727 /* GameTableViewCell.swift */; };
 		151305D52148408E00738727 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305D42148408E00738727 /* Game.swift */; };
@@ -21,6 +20,11 @@
 		151305E22148415E00738727 /* GamesRemoteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305E02148415E00738727 /* GamesRemoteDataSource.swift */; };
 		151305E32148415E00738727 /* GamesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305E12148415E00738727 /* GamesViewModel.swift */; };
 		151305E52149899000738727 /* ImageCacheLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305E42149899000738727 /* ImageCacheLoader.swift */; };
+		151305E72149901E00738727 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305E62149901E00738727 /* MockNetworkManager.swift */; };
+		151305EA2149970700738727 /* GamesRemoteDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305E92149970700738727 /* GamesRemoteDataSourceTest.swift */; };
+		151305EC214ADFD800738727 /* gameList.json in Resources */ = {isa = PBXBuildFile; fileRef = 151305EB214ADFD800738727 /* gameList.json */; };
+		151305ED214AE2BA00738727 /* gameList.json in Resources */ = {isa = PBXBuildFile; fileRef = 151305EB214ADFD800738727 /* gameList.json */; };
+		151305EF214AEF6400738727 /* GameTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305EE214AEF6400738727 /* GameTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +53,6 @@
 		151305AD21483F4200738727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		151305AF21483F4200738727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151305B421483F4200738727 /* KindredGameAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KindredGameAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		151305B821483F4200738727 /* KindredGameAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindredGameAppTests.swift; sourceTree = "<group>"; };
 		151305BA21483F4200738727 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151305BF21483F4200738727 /* KindredGameAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KindredGameAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		151305C321483F4200738727 /* KindredGameAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KindredGameAppUITests.swift; sourceTree = "<group>"; };
@@ -61,6 +64,10 @@
 		151305E02148415E00738727 /* GamesRemoteDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesRemoteDataSource.swift; sourceTree = "<group>"; };
 		151305E12148415E00738727 /* GamesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamesViewModel.swift; sourceTree = "<group>"; };
 		151305E42149899000738727 /* ImageCacheLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCacheLoader.swift; sourceTree = "<group>"; };
+		151305E62149901E00738727 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		151305E92149970700738727 /* GamesRemoteDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesRemoteDataSourceTest.swift; sourceTree = "<group>"; };
+		151305EB214ADFD800738727 /* gameList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = gameList.json; sourceTree = "<group>"; };
+		151305EE214AEF6400738727 /* GameTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +132,7 @@
 		151305B721483F4200738727 /* KindredGameAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				151305B821483F4200738727 /* KindredGameAppTests.swift */,
+				151305E8214996D300738727 /* GameList */,
 				151305BA21483F4200738727 /* Info.plist */,
 			);
 			path = KindredGameAppTests;
@@ -168,6 +175,33 @@
 			children = (
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		151305E8214996D300738727 /* GameList */ = {
+			isa = PBXGroup;
+			children = (
+				151305F1214AF1A600738727 /* Mocks */,
+				151305F0214AF19E00738727 /* UnitTest */,
+				151305EB214ADFD800738727 /* gameList.json */,
+			);
+			path = GameList;
+			sourceTree = "<group>";
+		};
+		151305F0214AF19E00738727 /* UnitTest */ = {
+			isa = PBXGroup;
+			children = (
+				151305E92149970700738727 /* GamesRemoteDataSourceTest.swift */,
+				151305EE214AEF6400738727 /* GameTest.swift */,
+			);
+			path = UnitTest;
+			sourceTree = "<group>";
+		};
+		151305F1214AF1A600738727 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				151305E62149901E00738727 /* MockNetworkManager.swift */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -277,6 +311,7 @@
 				151305AE21483F4200738727 /* LaunchScreen.storyboard in Resources */,
 				151305AB21483F4200738727 /* Assets.xcassets in Resources */,
 				151305A921483F4100738727 /* Main.storyboard in Resources */,
+				151305ED214AE2BA00738727 /* gameList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +319,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				151305EC214ADFD800738727 /* gameList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				151305B921483F4200738727 /* KindredGameAppTests.swift in Sources */,
+				151305E72149901E00738727 /* MockNetworkManager.swift in Sources */,
+				151305EA2149970700738727 /* GamesRemoteDataSourceTest.swift in Sources */,
+				151305EF214AEF6400738727 /* GameTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

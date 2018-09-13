@@ -4,12 +4,13 @@ import Foundation
 class GamesRemoteDataSource {
     let baseURLString: String = "https://api.unibet.com/"
     typealias Completion = ([Game]?, CustomError?) -> Void
+    var networkManager = NetworkManager()
     
     /// request list of games as Game model array
     ///
     /// - Parameter completion: completion handler
     func getGameList(completion:@escaping Completion){
-        NetworkManager.getRequest(requestURL: getGamesURL()) {[weak self] (jsonResponse, error) in
+        networkManager.getRequest(requestURL: getGamesURL()) {[weak self] (jsonResponse, error) in
             if error == nil, let response = jsonResponse,
                 let games = response["games"] as? [String:AnyObject] {
                 let arrGames = self?.parseJSONResponse(response: games)
@@ -30,12 +31,11 @@ class GamesRemoteDataSource {
     /// - Returns: array of Game model
     private func parseJSONResponse(response:[String:AnyObject]) -> [Game]{
         var arrGames = [Game]()
-        for (_,val) in response{
-            if let gameID = val["gameId"] as? String,
-                let gameName = val["gameName"] as? String,
-                let imageUrl = val["imageUrl"] as? String{
-                let game = Game(gameId: gameID, gameName: gameName, imageUrl: imageUrl)
-                arrGames.append(game)
+        for (_,value) in response{
+            if let val = value as? [String:AnyObject] {
+                if let game = Game(json: val){
+                    arrGames.append(game)
+                }
             }
         }
         return arrGames
