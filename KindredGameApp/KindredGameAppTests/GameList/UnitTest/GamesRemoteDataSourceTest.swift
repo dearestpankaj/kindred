@@ -1,6 +1,7 @@
 import XCTest
 @testable import KindredGameApp
 
+/// Unit test for GameRemoteDataSource class
 class GamesRemoteDataSourceTest: XCTestCase {
     let remoteDataSource = GamesRemoteDataSource()
     let mockNetworkManager = MockNetworkManager()
