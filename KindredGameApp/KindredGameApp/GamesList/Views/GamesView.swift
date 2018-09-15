@@ -1,6 +1,6 @@
 import UIKit
-
-class GamesViewController: UIViewController {
+///Display list of games in UITableView
+class GamesView: UIViewController {
     @IBOutlet weak var tblvwGames: UITableView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     let imgLoader = ImageCacheLoader()
@@ -48,7 +48,7 @@ class GamesViewController: UIViewController {
     }
 
 }
-extension GamesViewController:UITableViewDataSource, UITableViewDelegate{
+extension GamesView:UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return arrGames.count
     }

@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		151305A421483F4100738727 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305A321483F4100738727 /* AppDelegate.swift */; };
-		151305A621483F4100738727 /* GamesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305A521483F4100738727 /* GamesViewController.swift */; };
+		151305A621483F4100738727 /* GamesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151305A521483F4100738727 /* GamesView.swift */; };
 		151305A921483F4100738727 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151305A721483F4100738727 /* Main.storyboard */; };
 		151305AB21483F4200738727 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151305AA21483F4200738727 /* Assets.xcassets */; };
 		151305AE21483F4200738727 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 151305AC21483F4200738727 /* LaunchScreen.storyboard */; };
@@ -47,7 +47,7 @@
 /* Begin PBXFileReference section */
 		151305A021483F4100738727 /* KindredGameApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KindredGameApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		151305A321483F4100738727 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		151305A521483F4100738727 /* GamesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesViewController.swift; sourceTree = "<group>"; };
+		151305A521483F4100738727 /* GamesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesView.swift; sourceTree = "<group>"; };
 		151305A821483F4100738727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		151305AA21483F4200738727 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		151305AD21483F4200738727 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -150,11 +150,10 @@
 		151305D121483FF600738727 /* GamesList */ = {
 			isa = PBXGroup;
 			children = (
+				151305F4214C2B7300738727 /* ViewModel */,
+				151305F2214C2B3100738727 /* Views */,
 				151305E02148415E00738727 /* GamesRemoteDataSource.swift */,
-				151305E12148415E00738727 /* GamesViewModel.swift */,
 				151305D42148408E00738727 /* Game.swift */,
-				151305D22148407200738727 /* GameTableViewCell.swift */,
-				151305A521483F4100738727 /* GamesViewController.swift */,
 			);
 			path = GamesList;
 			sourceTree = "<group>";
@@ -202,6 +201,31 @@
 				151305E62149901E00738727 /* MockNetworkManager.swift */,
 			);
 			path = Mocks;
+			sourceTree = "<group>";
+		};
+		151305F2214C2B3100738727 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				151305F3214C2B6200738727 /* cells */,
+				151305A521483F4100738727 /* GamesView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		151305F3214C2B6200738727 /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				151305D22148407200738727 /* GameTableViewCell.swift */,
+			);
+			path = cells;
+			sourceTree = "<group>";
+		};
+		151305F4214C2B7300738727 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				151305E12148415E00738727 /* GamesViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -338,7 +362,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				151305DF2148413F00738727 /* CustomError.swift in Sources */,
-				151305A621483F4100738727 /* GamesViewController.swift in Sources */,
+				151305A621483F4100738727 /* GamesView.swift in Sources */,
 				151305E32148415E00738727 /* GamesViewModel.swift in Sources */,
 				151305E52149899000738727 /* ImageCacheLoader.swift in Sources */,
 				151305E22148415E00738727 /* GamesRemoteDataSource.swift in Sources */,

@@ -1,6 +1,7 @@
 import XCTest
 @testable import KindredGameApp
 
+/// Unit test for Game class
 class GameTest: XCTestCase {
     
     override func setUp() {

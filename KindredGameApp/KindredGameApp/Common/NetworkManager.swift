@@ -1,6 +1,6 @@
 import Foundation
 
-/// Class to handle network calls
+/// Handle network calls
 class NetworkManager {
     typealias Completion = ([String:AnyObject]?, CustomError?) -> Void
     
