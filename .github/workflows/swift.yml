@@ -1,22 +1,18 @@
-# This workflow will build a Swift project
-# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-swift
-
-name: Swift
+name: kindred Demo
 
 on:
   push:
-    branches: [ "master" ]
+    branches:
+main
   pull_request:
-    branches: [ "master" ]
+    branches:
+main
 
 jobs:
   build:
-
-    runs-on: macos-latest
-
+    runs-on: macOS-latest
     steps:
-    - uses: actions/checkout@v3
-    - name: Build
-      run: swift build -v
-    - name: Run tests
-      run: swift test -v
+      - name: Test
+        uses: actions/checkout@v1
+      - name: Build and Test
+        run:  xcodebuild test -project kindred.xcodeproj -scheme kindred -destination 'platform=iOS Simulator,name=iPhone 11,OS=14.3' build test
